@@ -1,6 +1,6 @@
 import User from "../models/User.js";
 
-const getusers = async (req,res,next)=>{
+const getUsers = async (req,res,next)=>{
     try{
         const users = await User.find();
         res.json(users);
